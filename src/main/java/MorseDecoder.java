@@ -87,11 +87,13 @@ public class MorseDecoder {
      */
     private static String powerToDotDash(final double[] powerMeasurements) {
         for (int i = 0; i < totalBinCount; i++) {
-            //*int ispower = 0;
-           // int waspower = 0;
-            //int issilence = 0;
-            //int wassilence = 0;
-            if (powerMeasurements[i] < POWER_THRESHOLD && powerMeasurements[i] < 
+            String[] s = new double[];
+            if (powerMeasurements[i] < POWER_THRESHOLD) {
+                powerMeasurements[i] 
+
+
+
+            }
         /*
          * There are four conditions to handle. Symbols should only be output when you see
          * transitions. You will also have to store how much power or silence you have seen.
